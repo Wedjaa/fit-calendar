@@ -34,7 +34,8 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, Route, IndexRoute, createHistory, useRouterHistory } from 'react-router';
+import { createHistory } from 'history';
+import { Router, Route, IndexRoute, useRouterHistory } from 'react-router';
 import { homeReducer } from './reducers/reducers';
 import FontFaceObserver from 'fontfaceobserver';
 
