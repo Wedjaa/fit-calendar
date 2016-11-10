@@ -42,7 +42,7 @@ class Nav extends Component {
   }
 
   _logout() {
-    this.props.dispatch(logout());
+    this.dispatch(logout());
   }
 }
 
