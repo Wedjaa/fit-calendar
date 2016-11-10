@@ -20,6 +20,9 @@ module.exports = function(options) {
           warnings: false // ...but do not show warnings in the console (there is a lot of them)
         }
       }),
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
+      }),
       new HtmlWebpackPlugin({
         template: 'index.html', // Move the index.html file...
         minify: { // Minifying it while it is parsed using the following, self–explanatory options
