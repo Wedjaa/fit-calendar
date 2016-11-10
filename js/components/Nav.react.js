@@ -12,6 +12,7 @@ import { logout } from '../actions/AppActions';
 import LoadingButton from './LoadingButton.react';
 
 class Nav extends Component {
+
   render() {
     // Render either the Log In and register buttons, or the logout button
     // based on the current authentication state.
@@ -21,7 +22,7 @@ class Nav extends Component {
           {this.props.currentlySending ? (
             <LoadingButton className="btn--nav" />
           ) : (
-            <a href="#" className="btn btn--login btn--nav" onClick={this._logout}>Logout</a>
+            <a href="#" className="btn btn--login btn--nav" onClick={this._logout.bind(this)}>Logout</a>
           )}
         </div>
       ) : (
