@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# c26a2d60b76c3c91487b
+
+favicon.ico
+manifest.json
+serviceworker-cache-polyfill.js
+serviceworker.js
+favicon.png
+css/main.css
+js/bundle.js
+index.html
+
+NETWORK:
+*
