@@ -1,13 +1,13 @@
 CACHE MANIFEST
-# 7da336636901a439167a
+# 59d29fc22adcb42ec939
 
-build/favicon.ico
-build/manifest.json
-build/serviceworker-cache-polyfill.js
-build/serviceworker.js
-build/favicon.png
-build/css/main.css
-build/js/bundle.js
+favicon.ico
+manifest.json
+serviceworker-cache-polyfill.js
+serviceworker.js
+favicon.png
+css/main.css
+js/bundle.js
 index.html
 
 NETWORK:
