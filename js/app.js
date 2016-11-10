@@ -34,8 +34,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createBrowserHistory } from 'history';
-import { Router, Route, IndexRoute, useRouterHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { homeReducer } from './reducers/reducers';
 import FontFaceObserver from 'fontfaceobserver';
 
@@ -91,11 +90,6 @@ function checkAuth(nextState, replaceState) {
     }
   }
 }
-
-// Define our base URL
-const browserHistory = useRouterHistory(createBrowserHistory)({
-    basename: '/fit-calendar'
-});
 
 // Mostly boilerplate, except for the Routes. These are the pages you can go to,
 // which are all wrapped in the App component, which contains the navigation etc
