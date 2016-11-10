@@ -8,8 +8,8 @@ serviceworker-cache-polyfill.js
 serviceworker.js
 css/main.css
 js/bundle.js
-icons/144-fitcal.png
 icons/192-fitcal.png
+icons/144-fitcal.png
 icons/48-fitcal.png
 icons/96-fitcal.png
 index.html
