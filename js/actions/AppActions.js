@@ -88,7 +88,7 @@ export function logout() {
       if (success === true) {
         dispatch(sendingRequest(false));
         dispatch(setAuthState(false));
-        browserHistory.replace(null, '/');
+        forwardTo('/');
       } else {
         requestFailed(err);
       }
