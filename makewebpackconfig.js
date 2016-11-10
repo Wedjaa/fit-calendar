@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var AppCachePlugin = require('appcache-webpack-plugin');
 
@@ -20,6 +21,12 @@ module.exports = function(options) {
           warnings: false // ...but do not show warnings in the console (there is a lot of them)
         }
       }),
+      new CopyWebpackPlugin([
+        {
+          from: 'icons',
+          to: 'icons'
+        }
+      ]),
       new webpack.DefinePlugin({
         'process.env': {
             NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development')
