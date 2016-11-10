@@ -96,6 +96,7 @@ function checkAuth(nextState, replaceState) {
 const browserHistory = useRouterHistory(createBrowserHistory)({
     basename: '/fit-calendar'
 });
+
 // Mostly boilerplate, except for the Routes. These are the pages you can go to,
 // which are all wrapped in the App component, which contains the navigation etc
 ReactDOM.render(
