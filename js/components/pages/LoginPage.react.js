@@ -32,7 +32,7 @@ export default class LoginPage extends Component {
   }
 
 	_login(username, password) {
-		this.props.dispatch(login(username, password));
+		this.dispatch(login(username, password));
 	}
 }
 
