@@ -5,7 +5,7 @@ importScripts('serviceworker-cache-polyfill.js');
 var CACHE_NAME = 'fit-calendar-cache-v1';
 
 // The files we want to cache
-var urlsToCache = ['.', 'build/css/main.css', 'build/js/bundle.js'];
+var urlsToCache = ['..', 'css/main.css', 'js/bundle.js'];
 
 // Set the callback for the install step
 self.addEventListener('install', function (event) {
