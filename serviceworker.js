@@ -1,11 +1,12 @@
 importScripts('serviceworker-cache-polyfill.js');
 
-var CACHE_NAME = 'react-boilerplate-cache-v1';
+var CACHE_NAME = 'fit-calendar-cache-v1';
+
 // The files we want to cache
 var urlsToCache = [
-  '/',
-  '/css/main.css',
-  '/js/bundle.js'
+  '.',
+  'build/css/main.css',
+  'build/js/bundle.js'
 ];
 
 // Set the callback for the install step
