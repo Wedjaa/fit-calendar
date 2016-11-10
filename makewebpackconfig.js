@@ -21,7 +21,9 @@ module.exports = function(options) {
         }
       }),
       new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
+        'process.env': {
+            NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development')
+        }
       }),
       new HtmlWebpackPlugin({
         template: 'index.html', // Move the index.html file...
