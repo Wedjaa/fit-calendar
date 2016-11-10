@@ -22,7 +22,7 @@ class Nav extends Component {
           {this.props.currentlySending ? (
             <LoadingButton className="btn--nav" />
           ) : (
-            <a href="#" className="btn btn--login btn--nav" onClick={this._logout.bind(this)}>Logout</a>
+            <a href="#" className="btn btn--login btn--nav" onClick={this._logout.bind(this.props)}>Logout</a>
           )}
         </div>
       ) : (
