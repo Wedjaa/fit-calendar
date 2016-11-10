@@ -96,12 +96,12 @@ function checkAuth(nextState, replaceState) {
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path="/fit-calendar" component={App}>
-        <Route path="." component={HomePage} />
+      <Route path="/" component={App}>
+        <Route path="fit-calendar/" component={HomePage} />
         <Route onEnter={checkAuth}>
-          <Route path="login" component={LoginPage} />
-          <Route path="register" component={RegisterPage} />
-          <Route path="dashboard" component={Dashboard} />
+          <Route path="fit-calendar/login" component={LoginPage} />
+          <Route path="fit-calendar/register" component={RegisterPage} />
+          <Route path="fit-calendar/dashboard" component={Dashboard} />
         </Route>
         <Route path="*" component={NotFound} />
       </Route>
