@@ -18,7 +18,7 @@ import 'file?name=[name].[ext]!../favicon.png';
 //Check for ServiceWorker support before trying to install it
 if ('serviceWorker' in navigator) {
     // Install ServiceWorker
-  navigator.serviceWorker.register('/serviceworker.js').then(() => {
+  navigator.serviceWorker.register('build/serviceworker.js').then(() => {
   }).catch((err) => {
     // Installation failed
     console.log('ServiceWorker registration failed, error:', err);
