@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 0628cbb61a60f9801ba8
+# 375f21d59750b53f1778
 
 favicon.ico
 favicon.png
@@ -9,9 +9,9 @@ serviceworker.js
 css/main.css
 js/bundle.js
 icons/144-fitcal.png
+icons/48-fitcal.png
 icons/192-fitcal.png
 icons/96-fitcal.png
-icons/48-fitcal.png
 index.html
 
 NETWORK:

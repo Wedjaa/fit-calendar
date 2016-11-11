@@ -23,10 +23,8 @@
  *    created in the second step
  */
 
-import bcrypt from 'bcryptjs';
 import { SET_AUTH, CHANGE_FORM, SENDING_REQUEST } from '../constants/AppConstants';
 import auth from '../utils/auth';
-import genSalt from '../utils/salt';
 import { browserHistory } from 'react-router';
 
 /**
